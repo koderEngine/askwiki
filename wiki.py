@@ -39,9 +39,15 @@ def generate_response(input):
 st.title('Request from Wikipedia')
 
 # Collect the prompt from the user 
+
 with st.form('my_form'):
-  text = st.text_area('Enter text:', 'What are 3 key advice for learning how to code?', max_chars=2048)
+  text = st.text_area('Enter text:', max_chars=2048)
   submitted = st.form_submit_button('Submit')
   if submitted:
-    generate_response(text)
+    if text:# and openai_api_key:
+      generate_response(text)
+    else:
+      st.caption(':red[Please enter a valid question and your OPENAI API Key]')
+
+
 
