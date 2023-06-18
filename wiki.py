@@ -44,7 +44,7 @@ with st.form('my_form'):
   text = st.text_area('Enter text:', max_chars=2048)
   submitted = st.form_submit_button('Submit')
   if submitted:
-    if text:# and openai_api_key:
+    if text and openai_api_key:
       generate_response(text)
     else:
       st.caption(':red[Please enter a valid question and your OPENAI API Key]')
