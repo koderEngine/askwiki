@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Import langchain stuff 
-from langchain.agents import load_tools, initialize_agent, AgentType
+from langchain.agents import load_tools, initialize_agent 
 from langchain.llms import OpenAI
 
 # Import apikey and set it to the environment
