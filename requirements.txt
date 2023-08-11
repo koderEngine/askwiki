@@ -1,8 +1,6 @@
 langchain
 openai
 youtube-transcript-api
-chromadb
-faiss-cpu
 wikipedia
 streamlit
-colorama
+
