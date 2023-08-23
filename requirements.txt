@@ -3,4 +3,5 @@ openai
 youtube-transcript-api
 wikipedia
 streamlit
+pydantic==1.10.9
 
